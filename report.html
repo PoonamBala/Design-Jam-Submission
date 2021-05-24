@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Scrolly Path with Cassie Evans! | @keyframers 4.1</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="scroll.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.grid .revealer .p{
+	padding:35px;
+	font-size:20px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  z-index: 1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="book.html">Book</a>
+  <a href="report.html" class="active">Report</a>
+  <a href="cards.html">Magazine</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<!-- partial:index.partial.html -->
+<div id="page">
+ <br><br><br><br><br><br><br><br><br><br>
+  <h2 class="title revealer">
+    <div class="revealer-inner"></div>
+  </h2>
+
+  <div class="grid">
+
+    <figure>
+      <figcaption class='revealer'>
+        <div class='revealer-inner'>1985-1992</div>
+      </figcaption>
+      <div class="revealer" style="padding:35px;">
+	  <p>Smith started as the MC of the hip-hop duo DJ Jazzy Jeff & The Fresh Prince, with his childhood friend Jeffrey "DJ Jazzy Jeff" Townes as turntablist and producer.Based on this success, the duo were brought to the attention of Jive Records and Russell Simmons.The group received the first Grammy Award for Best Rap Performance in 1989 for "Parents Just Don't Understand" (1988), though their most successful single was "Summertime" (1991).<br>Smith was later struggling financially in 1990 when the NBC television network signed him to a contract and built a sitcom, The Fresh Prince of Bel-Air, around him. The show was successful and began his acting career. </p>
+        <img class='revealer-img' style="height:330px;width:220px;" src="https://cdnph.upi.com/collection/fp/upi/12463/a3cbe9438b5c3d6b8835ac259df0e771/Moments-from-Will-Smiths-career_2_1.jpg" alt="" />
+      </div>
+    </figure>
+
+    <figure>
+      <figcaption class='revealer'>
+        <div class='revealer-inner'>1993-1996</div>
+      </figcaption>
+      <div class="revealer">
+	  <img class='revealer-img' src='https://ca-times.brightspotcdn.com/dims4/default/4265ff8/2147483647/strip/true/crop/1800x1200+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F81%2F84%2F97deb66a82ee5a0475e78874bc39%2Fla-et-favorite-hired-help-maids-butlers-pictur-001' alt='' >
+        <p><br><br>Smith's first major roles were in the drama Six Degrees of Separation (1993) and the action film Bad Boys (1995) in which he starred opposite Martin Lawrence. The film was successful, grossing $141,407,024 worldwide.<br>In 1996, Smith starred as part of an ensemble cast in Roland Emmerich's Independence Day. The film was a massive blockbuster.</p>
+		
+      </div>
+    </figure>
+
+    <figure>
+      <figcaption class='revealer'>
+        <div class='revealer-inner'>1997</div>
+      </figcaption>
+      <div class="revealer">
+       <p>Hhe starred alongside Tommy Lee Jones in the hit Men in Black, playing Agent J. The film was released on July 2 by Columbia Pictures and grossed over $589.3 million worldwide against a $90 million budget, becoming the year's third highest-grossing film.<br><br>During the summer of 1997, Smith also began his solo music career with the release of "Men in Black", the theme song for the film, which topped singles charts in several regions<br><br>In 1998, Smith starred with Gene Hackman in Enemy of the State. The following year he turned down the role of Neo in The Matrix in favor of Wild Wild West (1999).<br><br>Smith portrayed heavyweight boxer Muhammad Ali in the 2001 biopic Ali. For his performance he was nominated for the Academy Award for Best Actor, and the Golden Globe Award for Best Actor – Motion Picture Drama.</p>
+      <img class='revealer-img'  src='https://variety.com/wp-content/uploads/2016/06/will-smith-michael-mann-muhammad-ali-movie.jpg?w=1000' alt=''>
+		</div>
+    </figure>
+
+    <figure>
+      <figcaption class='revealer'>
+        <div class='revealer-inner'>1998-2003</div>
+      </figcaption>
+
+      <div class="revealer"  style="padding:35px;">
+        <img class='revealer-img'  src='https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_17/3316071/200420-dj-jazzy-fresh-fresh-prince-will-smith-2019-ac-610p-3316071.jpg' alt=''>
+		<p><br><br>Later in the year, Smith's first compilation album Greatest Hits was released, featuring songs from his three solo albums as well as those produced with DJ Jazzy Jeff.<br><br>He starred in the animated film Shark Tale and the science fiction film I, Robot; both films were box office successes despite mixed reviews.<br><br>Smith's latest album Lost and Found was released in 2005, peaking at number six on the Billboard 200.[34] Lead single "Switch" reached the top ten of both the Billboard Hot 100 and the UK Singles Chart.</p>
+	   </div>
+    </figure>
+
+    <figure>
+      <figcaption class='revealer'>
+        <div class='revealer-inner'>2005-2007</div>
+      </figcaption>
+
+      <div class="revealer">
+         <p>Smith's latest album Lost and Found was released in 2005, peaking at number six on the Billboard 200. He top ten of both the Billboard Hot 100 and the UK Singles Chart. In 2005, Smith was entered into the Guinness Book of World Records for attending three premieres in a 24-hour time span.<br><br>Smith and his son Jaden played father and son in the 2006 biographical drama The Pursuit of Happyness.<br><br>Smith starred in the film I Am Legend, released December 14, 2007. Alongside marginally positive reviews,[50] its opening was the largest ever for a film released in the United States during December.</div>
+    </figure>
+
+    <figure>
+      <figcaption class='revealer'>
+        <div class='revealer-inner'>2008-2013</div>
+      </figcaption>
+
+      <div class="revealer">
+        <p style="padding:20px;">In 2008, Smith was reported to be developing a film entitled The Last Pharaoh, in which he would be starring as Taharqa. Smith later starred in the superhero movie Hancock, which grossed $627,946,274<br><br>On August 19, 2011, it was announced that Smith had returned to the studio with producer La Mar Edwards to work on his fifth studio album.<br><br>Smith again reprised his role as Agent J with Men in Black 3, which opened on May 25, 2012, his first major starring role in four years.<br><br>In 2013, Smith starred in After Earth with his son Jaden. </p>
+      </div>
+    </figure>
+	
+	<figure>
+      <figcaption class='revealer'>
+        <div class='revealer-inner'>2015-2017</div>
+      </figcaption>
+
+      <div class="revealer">
+       <img class='revealer-img' src='https://media.npr.org/assets/img/2015/02/25/foc-04246r_wide-d63d5db786664a3546ce37fef95417aa8f3016a2.jpg' alt=''>
+     <p style="padding:20px;">Smith starred opposite Margot Robbie in the romance drama Focus, released on February 27, 2015.<br>In 2016, Smith played Deadshot in the supervillain team-up action film Suicide Squad. Smith's participation in the film meant choosing it over a role in Independence Day: Resurgence, which he said would be like "clinging and clawing backwards."<br>His film Bright was distributed via Netflix on December 22, 2017.<br><br> </p>
+	  </div>
+    </figure>
+	
+	 <figure>
+      <figcaption class='revealer'>
+        <div class='revealer-inner'>2018-2019</div>
+      </figcaption>
+      <div class="revealer" >
+	  
+      <p>Smith launched his own YouTube channel, which as of July 2019 has over 6 million subscribers and 294 million total views. Also in 2017, Smith released the song "Get Lit" along with Jazzy Jeff.<br><br>Smith performed the song "Live It Up" with American singer Nicky Jam and Kosovar singer Era Istrefi at the closing ceremony of the 2018 FIFA World Cup in Moscow, Russia.<br><br>Smith portrayed The Genie in the live-action adaptation of Disney's Aladdin, directed by Guy Ritchie. He also participated in the soundtracks by recording singles: "Arabian Nights (2019)", "Friend Like Me" and "Prince Ali".<br><br>Smith appeared as an assassin who faces off against a younger clone of himself in Ang Lee's Gemini Man, released on October 11, 2019.[87] Later that year, Smith had his second starring role in an animated film, in Spies in Disguise, opposite Tom Holland.</p>
+	  </div>
+    </figure>
+	
+	<!--<figure>
+      <figcaption class='revealer'>
+        <div class='revealer-inner'>Success</div>
+      </figcaption>
+
+      <div class="revealer">
+        <p><br><br></p>
+      
+      </div>
+    </figure>
+	
+	 <figure>
+      <figcaption class='revealer'>
+        <div class='revealer-inner'>1999</div>
+      </figcaption>
+      <div class="revealer"  style="padding:35px;">
+        <p><br><br>Box Office Star: 'Pirates,' 'Sweeney Todd' and 'Alice'</p>
+      </div>
+    </figure>
+	
+	<br><br><br><br><br><br>-->
+	
+	
+	
+
+
+    <span class="spacer1"></span>
+    <span class="spacer2"></span>
+    <span class="spacer3"></span>
+    <span class="spacer4"></span>
+  </div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+  <svg id="stroke-svg" preserveAspectRatio="xMidYMid slice" fill-rule="evenodd" stroke-miterlimit="1.5" clip-rule="evenodd" viewBox="0 0 2132 5344">
+    <defs>
+      <mask id="stroke-mask">
+        <path id="mask-stroke" fill="none" stroke="white" stroke-width="5" d="M324.813-52.135C204.651 65.523 458.362 173.469 601.765 189.285c169.887 18.737 410.22-29.224 520.966-82.617 100.731-48.564 154.809-138.521 101.624-165.772-55.127-28.247-560.763 155.569-415.777 300.554 49.997 49.998 502.244 145.465 784.213 38.725 155.512-58.87 188.43-160.067 172.708-189.71-27.518-51.882-247.239 28.961-305.985 65.473-276.859 172.073-515.191 899.522-201.638 1338.54 206.052 288.502 827.828 487.908 785.773 164.706-17.293-132.902-272.903-149.223-367.935-88.64-113.522 72.37-335.863 193.745-231.163 504.727 88.882 264 678.637 273.92 544.444 558.087-147.028 311.346-586.597 149.888-757.298 124.559-379.379-56.295-803.402-136.829-955.247 297.618-59.843 171.216-44.961 489.493 70.837 631.153 162.443 198.723 459.583-129.982 369.648-294.59-96.415-176.467-322.65 22.711-396.282 105.313-97.708 109.612-166.931 399.956-39.123 502.579 267.219 214.564 622.086-28.76 831.909 21.963 561.219 135.67 235.391 679.206 457.463 917.719 221.323 237.708 654.322-95.359 407.084-266.334-358.912-248.2-527.841 403.197-687.761 495.191-241.38 138.854-374.262-119.763-602.689-142.606-73.378-7.337-157.751-.818-224.685 31.794-15.142 7.378-52.177 37.97-69.586 37.97" />
+      </mask>
+
+    </defs>
+
+    <path id="stroke" stroke="grey" mask="url(#stroke-mask)" stroke-dasharray="20" stroke-dashoffset="var(--dashOffset)" fill="none" stroke-width="5" d="M324.813-52.135C204.651 65.523 458.362 173.469 601.765 189.285c169.887 18.737 410.22-29.224 520.966-82.617 100.731-48.564 154.809-138.521 101.624-165.772-55.127-28.247-560.763 155.569-415.777 300.554 49.997 49.998 502.244 145.465 784.213 38.725 155.512-58.87 188.43-160.067 172.708-189.71-27.518-51.882-247.239 28.961-305.985 65.473-276.859 172.073-515.191 899.522-201.638 1338.54 206.052 288.502 827.828 487.908 785.773 164.706-17.293-132.902-272.903-149.223-367.935-88.64-113.522 72.37-335.863 193.745-231.163 504.727 88.882 264 678.637 273.92 544.444 558.087-147.028 311.346-586.597 149.888-757.298 124.559-379.379-56.295-803.402-136.829-955.247 297.618-59.843 171.216-44.961 489.493 70.837 631.153 162.443 198.723 459.583-129.982 369.648-294.59-96.415-176.467-322.65 22.711-396.282 105.313-97.708 109.612-166.931 399.956-39.123 502.579 267.219 214.564 622.086-28.76 831.909 21.963 561.219 135.67 235.391 679.206 457.463 917.719 221.323 237.708 654.322-95.359 407.084-266.334-358.912-248.2-527.841 403.197-687.761 495.191-241.38 138.854-374.262-119.763-602.689-142.606-73.378-7.337-157.751-.818-224.685 31.794-15.142 7.378-52.177 37.97-69.586 37.97" />
+  </svg>
+</div>
+<br><br><br><br><br><br>
+<script src='scroll.js'></script>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js'></script><script  src="scroll1.js"></script>
+
+</body>
+</html>
+
