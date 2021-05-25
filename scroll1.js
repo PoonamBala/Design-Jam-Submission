@@ -1,52 +1,34 @@
-gsap.from("#mask-stroke", {
-  drawSVG: "0%",
-  scrollTrigger: {
-    trigger: "#page",
-    start: "-7% top",
-    end: "bottom+=20% bottom",
-    scrub: 1
-  }
+const path = document.querySelector('.path');
+const circle = document.querySelector('.circle');
+
+let pathPosition = path.getBoundingClientRect();
+let documentPosition = document.body.getBoundingClientRect();
+const pathTotalLength = path.getTotalLength();
+
+function positionElements() {
+		// SVG passes center of screen
+		const relativePageOffset = -pathPosition.top +
+					(window.pageYOffset + window.innerHeight * .5);
+		
+		const pointPercentage = relativePageOffset / pathPosition.height;
+		const pointOnPath = pointPercentage * pathTotalLength;
+		const pathPoint = path.getPointAtLength(pointOnPath);
+
+		circle.style.transform = `translate(
+			${ pathPosition.left + pathPoint.x }px,
+			${ pathPosition.top + pathPoint.y }px
+		)`;
+}
+
+window.addEventListener('scroll', () => {
+	positionElements();
+})
+
+window.addEventListener('resize', () => {
+	pathPosition = path.getBoundingClientRect();
+	documentPosition = document.body.getBoundingClientRect();
+	
+	positionElements();
 });
 
-gsap.from("#stroke", {
-  "--dashOffset": 1000,
-  delay: 1,
-  scrollTrigger: {
-    trigger: "#page",
-    start: "-5% top",
-    end: "bottom+=20% bottom",
-    scrub: 1
-  }
-});
-
-let text = gsap.utils.toArray(".revealer-inner");
-text.forEach((el, i) => {
-  gsap.from(el, {
-    yPercent: 120,
-    duration: 1,
-    delay: el.classList.contains("page-title-secondary") ? 2 : 1,
-    scrollTrigger: {
-      trigger: el,
-      start: "top center",
-      end: "bottom top",
-      toggleActions: "restart pause resume reset"
-    }
-  });
-});
-
-let images = gsap.utils.toArray(".revealer-img");
-images.forEach((el) => {
-  gsap.from(el, {
-    opacity: 0,
-    yPercent: 10,
-    scale: 1.2,
-    duration: 2,
-    scrollTrigger: {
-      trigger: el,
-      start: "top bottom",
-      end: "bottom top",
-      //markers: true,
-      toggleActions: "restart pause resume pause"
-    }
-  });
-});
+positionElements();
