@@ -106,6 +106,7 @@ main > p {
     width: 100%;
     background-color: black;
     position:relative;
+	box-shadow: 15px 15px 5px grey;
 }
 .timeline-slide .circle {
     border: 4px #fff solid;
