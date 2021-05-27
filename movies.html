@@ -1,0 +1,236 @@
+
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Magazine</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="card.css">
+	  <link rel="stylesheet" href="f.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="para.css">
+
+	  <style>
+.topnav {
+  overflow: hidden;
+  background-color: ;
+  position: fixed;
+  z-index: 1;
+  border-bottom: 2px solid white;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+	  </style>
+</head>
+
+
+<body>
+ 
+<div class="cursor"></div>
+<div class="cursor2"></div>
+
+
+<div class="topnav" id="myTopnav">
+<a href="#" >Menu:</a>
+  <a href="index.html">Home</a>
+  <a href="life.html">Life</a>
+  <a href="career.html">Career</a>
+  <a href="movies.html" class="active">Movies</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+ <h1 style="text-align:center;font-size:85px;text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;"><br>MOVIES</h1>
+ 
+<div id="player">
+    <audio id="a" controls volume="0.1" autoplay hidden>
+     <source src="mib.mp3" type="audio/mpeg">
+                unsupported !! 
+    </audio>
+</div>
+ 
+ <div class="flip-main">
+ 
+   <div class="container">
+      <div class="row">
+         <!-- flip card start -->
+         <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                   <img src="https://flxt.tmsimg.com/assets/p19526_p_v10_av.jpg" alt="flip-card">
+                </div>
+                <div class="flip-card-back">
+                   <div class="text">
+                      <h3>MIB</h3>
+                      <p>Men in Black is a series of American science fiction action comedy films directed by Barry Sonnenfeld, and based on the Marvel comic book series based on the conspiracy theory.</p>
+                   </div>
+                </div>
+            </div>
+         </div>
+         <!-- flip card end -->
+         <!-- flip card start -->
+         <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                   <img src="https://i.pinimg.com/originals/0e/b9/3b/0eb93b26dc20bc4b18fbc94d9b733638.jpg" alt="flip-card">
+                </div>
+                <div class="flip-card-back">
+                   <div class="text">
+                      <h3>DEADSHOT IN SUICIDE SQUAD</h3>
+                      <p>Deadshot is a fictional character appearing in American comic books published by DC Comics. Created by David Vern Reed, Lew Schwartz, and Bob Kane.</p>
+                   </div>
+                </div>
+            </div>
+         </div>
+         <!-- flip card end -->
+         <!-- flip card start -->
+         <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">   <img src="https://m.media-amazon.com/images/M/MV5BMTcyNzk5NDg1Nl5BMl5BanBnXkFtZTgwNTM5MDQxNDM@._V1_.jpg" alt="flip-card">
+                </div>
+                <div class="flip-card-back">
+                   <div class="text">
+                      <h3>BRIGHT</h3>
+                      <p>In an alternate present day, humans, orcs, elves and fairies have been coexisting since the beginning of time. Two police officers, one a human, the other an orc, embark on a routine night patrol that will alter the future of their world as they know it.</p>
+                   </div>
+                </div>
+            </div>
+         </div>
+         <!-- flip card end -->
+      </div>
+	  
+	  
+	  
+	  <div class="row">
+         <!-- flip card start -->
+         
+         <!-- flip card end -->
+         <!-- flip card start -->
+         <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                   <img src="https://resizing.flixster.com/vYsn-bvQtSrZJ3e_4nAdmkG89hA=/206x305/v2/https://flxt.tmsimg.com/assets/p170977_p_v7_ae.jpg" alt="flip-card">
+                </div>
+                <div class="flip-card-back">
+                   <div class="text">
+                      <h3>I AM LEGEND</h3>
+                      <p>Robert Neville, a scientist, is the last human survivor of a plague in the whole of New York. He attempts to find a way to reverse the effects of the man-made virus by using his own immune blood.</p>
+                   </div>
+                </div>
+            </div>
+         </div>
+         <!-- flip card end -->
+		  <!-- flip card end -->
+		 <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+				   <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/Movie_poster_i_robot.jpg" alt="flip-card">
+                
+                </div>
+                <div class="flip-card-back">
+                   <div class="text">
+                      <h3>I ROBOT</h3>
+                      <p>Del Spooner investigates the murder of Dr Alfred, who works at US Robotics, with the help of a robopsychologist. He tries to deduce if a robot has violated the laws of robotics and killed him.</p>
+                   </div>
+                </div>
+            </div>
+         </div>
+         <!-- flip card start -->
+         <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">   <img src="https://www.sonypictures.com/sites/default/files/styles/max_560x840/public/title-key-art/badboys_onesheet_1400x2100_0.jpg?itok=GGzVOfd0" alt="flip-card">
+                
+                </div>
+                <div class="flip-card-back">
+                   <div class="text">
+                      <h3>BAD BOYS</h3>
+                      <p>Bad Boys is a series of American action comedy films created by George Gallo. It stars Will Smith and Martin Lawrence as two detectives in the Miami Police Department. Joe Pantoliano and Theresa Randle also appear in all three films.</p>
+                   </div>
+                </div>
+            </div>
+         </div>
+        
+      </div>
+   </div>
+   
+   
+ </div>
+
+ 
+ 
+ <div id="parallax"><h1>A "DEAD-SHOT"</h1></div>
+<!-- partial -->
+  <script  src="para.js"></script>
+ <script>
+  var audio = document.getElementById("a");
+  audio.volume = 0.8;
+</script>
+ <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<script>var cursor = document.querySelector(".cursor");
+var cursor2 = document.querySelector(".cursor2");
+document.addEventListener("mousemove",function(e){
+  cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+});</script>
+ 
+</body>
+</html>
+
+
+
+
+
